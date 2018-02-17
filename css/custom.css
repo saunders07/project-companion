@@ -1,0 +1,12 @@
+#top-bar {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+#HNDLogo {
+    padding-top: 0.7em;
+    display: block;
+    margin: 0 auto;
+}
+#title-bar {
+    text-align: center;
+}
