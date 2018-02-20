@@ -32,7 +32,7 @@
 			</div>
 
 			<div id="assignmentsList">
-
+				
 			</div>
     </div>
 
@@ -43,6 +43,25 @@
 		<script src="vendor/wow/wow.min.js"></script>
 		<script src="js/nativedroid2.js"></script>
 		<script src="nd2settings.js"></script>
+		<script>
+			var e = "";
+
+			$.getJSON("documentTest.json", function(data){
+				var assignments = data.assignments;
+				for (q in assignments) {
+					e += "<ul class='assignmentListContent' id =" + [q] + "><p class ='nd2-title'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+						document.getElementById("assignmentsList").innerHTML = e;
+					e += "<li> Unit Name: " + assignments[q].unit_name + "</li>";
+						document.getElementById("assignmentsList").innerHTML = e;
+					e += "<li>Assignment Description: " + assignments[q].assign_desc + "</li>";
+						document.getElementById("assignmentsList").innerHTML = e;
+					e += "<li>Hand Out: " + assignments[q].handoutdate + "</li>";
+						document.getElementById("assignmentsList").innerHTML = e;
+					e += "<li>Hand In: " + assignments[q].handindate + "</li></ul>";
+						document.getElementById("assignmentsList").innerHTML = e;
+				}
+				});
+		</script>
 
 	</body>
 </html>

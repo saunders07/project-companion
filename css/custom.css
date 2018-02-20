@@ -10,3 +10,8 @@
 #title-bar {
     text-align: center;
 }
+
+ul {
+    width: 70%;
+    margin: auto;
+}

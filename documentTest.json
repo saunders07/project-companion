@@ -1,0 +1,17 @@
+{
+  "assignments":
+    [{
+      "unit_number": "CSD302",
+      "unit_name": "Mobile App Design",
+      "assign_desc": "Assign 1",
+      "handoutdate": "02/11/2017",
+      "handindate": "01/02/2018"
+      },
+    {
+      "unit_number": "CSD302",
+      "unit_name": "Mobile App Design",
+      "assign_desc": "Assign 2",
+      "handoutdate": "02/11/2017",
+      "handindate": "01/02/2018"
+      }]
+}
