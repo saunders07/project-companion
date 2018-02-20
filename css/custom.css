@@ -10,8 +10,7 @@
 #title-bar {
     text-align: center;
 }
-
-ul {
-    width: 70%;
+#assignmentsList {
     margin: auto;
+    width: 70%;
 }
