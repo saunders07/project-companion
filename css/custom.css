@@ -14,3 +14,11 @@
     margin: auto;
     width: 70%;
 }
+.handIn {
+    color: greenyellow;
+    font: bold;
+}
+.handOut {
+    color: red;
+    font: bold;
+}

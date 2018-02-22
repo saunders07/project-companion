@@ -3,50 +3,50 @@
     [{
       "unit_number": "CSD302",
       "unit_name": "Mobile App Design",
-      "assign_desc": "Assign 1",
+      "assign_desc": "Assignment 1",
       "handoutdate": "02/11/2017",
       "handindate": "01/02/2018"
       },
     {
       "unit_number": "CSD302",
       "unit_name": "Mobile Application Design",
-      "assign_desc": "Assign 2",
-      "handoutdate": "02/11/2017",
-      "handindate": "01/02/2018"
+      "assign_desc": "Assignment 2",
+      "handoutdate": "18/01/2018",
+      "handindate": "24/05/2018"
       },
     {
       "unit_number": "CSD303",
       "unit_name": "Emerging Computer Technologies",
-      "assign_desc": "Assign 1",
-      "handoutdate": "02/11/2017",
-      "handindate": "01/02/2018"
+      "assign_desc": "Assignment 1",
+      "handoutdate": "09/11/2017",
+      "handindate": "08/03/2018"
       },
     {
       "unit_number": "CSD303",
       "unit_name": "Emerging Computer Technologies",
-      "assign_desc": "Assign 2",
-      "handoutdate": "02/11/2017",
-      "handindate": "01/02/2018"
+      "assign_desc": "Assignment 2",
+      "handoutdate": "08/03/2018",
+      "handindate": "03/05/2018"
       },
     {
       "unit_number": "CSD304",
       "unit_name": "Web and Network Management",
-      "assign_desc": "Assign 1",
-      "handoutdate": "02/11/2017",
-      "handindate": "01/02/2018"
+      "assign_desc": "Assignment 1",
+      "handoutdate": "19/10/2017",
+      "handindate": "11/01/2018"
       },
     {
       "unit_number": "CSD304",
       "unit_name": "Web and Network Management",
-      "assign_desc": "Assign 2",
+      "assign_desc": "Assignment 2",
       "handoutdate": "02/11/2017",
       "handindate": "01/02/2018"
       },
     {
       "unit_number": "CSD305",
       "unit_name": "Advanced Databases",
-      "assign_desc": "Assign 1",
-      "handoutdate": "02/11/2017",
-      "handindate": "01/02/2018"
+      "assign_desc": "Assignment 1",
+      "handoutdate": "14/11/2017",
+      "handindate": "17/04/2018"
       }]
 }
