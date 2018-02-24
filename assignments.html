@@ -32,10 +32,22 @@
 				</ul>
 			</div>
 
-			
+			<div data-role="nd2tab" data-tab="HNDY1">
+				<div id="assignmentsListHNDY1">
+					
+				</div>
+			</div>
 
-			<div id="assignmentsList">
-				
+			<div data-role="nd2tab" data-tab="HNDY2">
+				<div id="assignmentsListHNDY2">
+					
+				</div>
+			</div>
+			
+			<div data-role="nd2tab" data-tab="BSCHONS">
+				<div id="assignmentsListBSCHONS">
+					
+				</div>
 			</div>
     </div>
 
@@ -53,15 +65,53 @@
 				var assignments = data.assignments;
 				for (q in assignments) {
 					e += "<div class='assignmentContent' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
-						document.getElementById("assignmentsList").innerHTML = e;
+						document.getElementById("assignmentsListBSCHONS").innerHTML = e;
 					e += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
-						document.getElementById("assignmentsList").innerHTML = e;
+						document.getElementById("assignmentsListBSCHONS").innerHTML = e;
 					e += "<p class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</p>";
-						document.getElementById("assignmentsList").innerHTML = e;
+						document.getElementById("assignmentsListBSCHONS").innerHTML = e;
 					e += "<p class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></p>";
-						document.getElementById("assignmentsList").innerHTML = e;
+						document.getElementById("assignmentsListBSCHONS").innerHTML = e;
 					e += "<p class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></p></div>";
-						document.getElementById("assignmentsList").innerHTML = e;
+						document.getElementById("assignmentsListBSCHONS").innerHTML = e;
+				}
+				});
+		</script>
+		<script>
+			var e = "";
+
+			$.getJSON("documentTest.json", function(data){
+				var assignments = data.assignments;
+				for (q in assignments) {
+					e += "<div class='assignmentContent' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+						document.getElementById("assignmentsListHNDY1").innerHTML = e;
+					e += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
+						document.getElementById("assignmentsListHNDY1").innerHTML = e;
+					e += "<p class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</p>";
+						document.getElementById("assignmentsListHNDY1").innerHTML = e;
+					e += "<p class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></p>";
+						document.getElementById("assignmentsListHNDY1").innerHTML = e;
+					e += "<p class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></p></div>";
+						document.getElementById("assignmentsListHNDY1").innerHTML = e;
+				}
+				});
+		</script>
+		<script>
+			var e = "";
+
+			$.getJSON("documentTest.json", function(data){
+				var assignments = data.assignments;
+				for (q in assignments) {
+					e += "<div class='assignmentContent' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+						document.getElementById("assignmentsListHNDY2").innerHTML = e;
+					e += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
+						document.getElementById("assignmentsListHNDY2").innerHTML = e;
+					e += "<p class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</p>";
+						document.getElementById("assignmentsListHNDY2").innerHTML = e;
+					e += "<p class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></p>";
+						document.getElementById("assignmentsListHNDY2").innerHTML = e;
+					e += "<p class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></p></div>";
+						document.getElementById("assignmentsListHNDY2").innerHTML = e;
 				}
 				});
 		</script>

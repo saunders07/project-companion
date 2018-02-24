@@ -12,7 +12,7 @@
 }
 #assignmentsList {
     margin: auto;
-    width: 85%;
+    width: 100%;
 }
 .handIn {
     color: red;
@@ -29,15 +29,15 @@
 /* .assignmentInfo:nth-child(even) {
     background-color: white;
 } */
-.assignmentContent {
-    background-color: #9E9E9E;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
 .assignmentContent:nth-child(odd) {
-    background-color:#4CAF50;
+    background-color: #BDBDBD;
     color: white;
+    /* border-radius: 5px; */
+    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+}
+.assignmentContent:nth-child(even) {
+    background-color:white;
+    color: #9E9E9E;
 }
 .assignmentNameAndNumber {
     padding-top: 0.5rem;
