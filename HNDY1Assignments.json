@@ -43,6 +43,13 @@
       "handindate": "20/06/2018"
       },
     {
+      "unit_number": "Unit 3",
+      "unit_name": "Employability",
+      "assign_desc": "Assignment 3",
+      "handoutdate": "07/11/2017",
+      "handindate": "28/11/2018"
+      },
+    {
       "unit_number": "Unit 9",
       "unit_name": "Systems Analysis and Design",
       "assign_desc": "Assignment 1",
@@ -68,7 +75,14 @@
       "unit_name": "Website Design",
       "assign_desc": "Assignment 2",
       "handoutdate": "01/11/2017",
-      "handindate": "06/11/2017"
+      "handindate": "06/12/2017"
+      },
+    {
+      "unit_number": "Unit 14",
+      "unit_name": "Website Design",
+      "assign_desc": "Assignment 3",
+      "handoutdate": "06/12/2017",
+      "handindate": "03/01/2018"
       },
     {
       "unit_number": "Unit 15",
