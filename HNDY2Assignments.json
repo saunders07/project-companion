@@ -1,115 +1,101 @@
 {
   "assignments":
     [{
-      "unit_number": "Unit 1",
-      "unit_name": "Business Skills for E-Commerce",
-      "assign_desc": "Assignment 1",
-      "handoutdate": "11/10/2017",
-      "handindate": "08/11/2017"
-      },
-    {
-      "unit_number": "Unit 1",
-      "unit_name": "Business Skills for E-Commerce",
-      "assign_desc": "Assignment 2",
-      "handoutdate": "08/11/2017",
-      "handindate": "20/12/2017"
-      },
-    {
-      "unit_number": "Unit 2",
-      "unit_name": "Computer Systems",
-      "assign_desc": "Assignment 1",
+      "unit_number": "Unit 4",
+      "unit_name": "Project",
+      "assign_desc": "Project Proposal",
       "handoutdate": "03/10/2017",
-      "handindate": "21/11/2017"
+      "handindate": "16/10/2017"
       },
     {
-      "unit_number": "Unit 2",
-      "unit_name": "Computer Systems",
-      "assign_desc": "Assignment 2",
-      "handoutdate": "07/11/2017",
-      "handindate": "03/01/2018"
-      },
-    {
-      "unit_number": "Unit 3",
-      "unit_name": "Employability",
-      "assign_desc": "Assignment 1",
+      "unit_number": "Unit 4",
+      "unit_name": "Project",
+      "assign_desc": "Project Report and Documentation",
       "handoutdate": "10/10/2017",
-      "handindate": "22/05/2018"
+      "handindate": "04/06/2018"
       },
     {
-      "unit_number": "Unit 3",
-      "unit_name": "Employability",
-      "assign_desc": "Assignment 2",
-      "handoutdate": "02/05/2018",
-      "handindate": "20/06/2018"
-      },
-    {
-      "unit_number": "Unit 9",
-      "unit_name": "Systems Analysis and Design",
+      "unit_number": "Unit 29",
+      "unit_name": "E-Commerce Strategy",
       "assign_desc": "Assignment 1",
-      "handoutdate": "28/03/2018",
-      "handindate": "02/05/2018"
+      "handoutdate": "31/10/2017",
+      "handindate": "19/12/2017"
       },
-    {
-      "unit_number": "Unit 9",
-      "unit_name": "Systems Analysis and Design",
-      "assign_desc": "Assignment 2",
-      "handoutdate": "02/05/2018",
-      "handindate": "20/06/2018"
-      },
-    {
-      "unit_number": "Unit 14",
-      "unit_name": "Website Design",
-      "assign_desc": "Assignment 1",
-      "handoutdate": "03/10/2017",
-      "handindate": "01/11/2017"
-      },
-    {
-      "unit_number": "Unit 14",
-      "unit_name": "Website Design",
-      "assign_desc": "Assignment 2",
-      "handoutdate": "01/11/2017",
-      "handindate": "06/11/2017"
-      },
-    {
-      "unit_number": "Unit 15",
-      "unit_name": "Website Management",
-      "assign_desc": "Assignment 1",
-      "handoutdate": "16/01/2018",
-      "handindate": "13/02/2018"
-      },
-    {
-      "unit_number": "Unit 15",
-      "unit_name": "Website Management",
-      "assign_desc": "Assignment 2",
-      "handoutdate": "30/01/2018",
-      "handindate": "13/03/2018"
-    },
-    {
-      "unit_number": "Unit 17",
-      "unit_name": "Database Design",
-      "assign_desc": "Assignment 1",
-      "handoutdate": "10/01/2018",
-      "handindate": "31/01/2018"
-      },
-    {
-      "unit_number": "Unit 17",
-      "unit_name": "Database Design",
-      "assign_desc": "Assignment 2",
-      "handoutdate": "31/01/2018",
-      "handindate": "28/03/2018"
-      },
-    {
-      "unit_number": "Unit 24",
-      "unit_name": "Networking Technologies",
-      "assign_desc": "Assignment 1",
-      "handoutdate": "27/03/2018",
-      "handindate": "01/05/2018"
-      },
-    {
-      "unit_number": "Unit 24",
-      "unit_name": "Networking Technologies",
-      "assign_desc": "Assignment 2",
-      "handoutdate": "24/04/2018",
-      "handindate": "12/06/2018"
-      }]
+      {
+        "unit_number": "Unit 36",
+        "unit_name": "Internet Server Management",
+        "assign_desc": "Assignment 1",
+        "handoutdate": "22/11/2017",
+        "handindate": "17/01/2018"
+        },
+      {
+        "unit_number": "Unit 36",
+        "unit_name": "Internet Server Management",
+        "assign_desc": "Assignment 2",
+        "handoutdate": "21/02/2018",
+        "handindate": "09/05/2018"
+        },
+      {
+        "unit_number": "Unit 46",
+        "unit_name": "Network Security",
+        "assign_desc": "Assignment 1",
+        "handoutdate": "06/11/2017",
+        "handindate": "20/11/2017"
+        },
+      {
+        "unit_number": "Unit 46",
+        "unit_name": "Network Security",
+        "assign_desc": "Assignment 2",
+        "handoutdate": "21/02/2018",
+        "handindate": "09/05/2018"
+        },
+      {
+        "unit_number": "Unit 32",
+        "unit_name": "Quality Systems in IT",
+        "assign_desc": "Assignment 1",
+        "handoutdate": "06/10/2017",
+        "handindate": "08/05/2018"
+        },
+      {
+        "unit_number": "Unit 33",
+        "unit_name": "Data Analysis and Design",
+        "assign_desc": "Assignment 1",
+        "handoutdate": "31/10/2017",
+        "handindate": "09/01/2018"
+        },
+      {
+        "unit_number": "Unit 33",
+        "unit_name": "Data Analysis and Design",
+        "assign_desc": "Assignment 3",
+        "handoutdate": "27/03/2018",
+        "handindate": "01/05/2018"
+        },
+      {
+        "unit_number": "Unit 35",
+        "unit_name": "Web App Development",
+        "assign_desc": "Assignment 1",
+        "handoutdate": "21/11/2017",
+        "handindate": "12/11/2017"
+        },
+      {
+        "unit_number": "Unit 35",
+        "unit_name": "Web App Development",
+        "assign_desc": "Assignment 2",
+        "handoutdate": "06/02/2018",
+        "handindate": "24/04/2018"
+        },
+      {
+        "unit_number": "Unit 39",
+        "unit_name": "Games Design",
+        "assign_desc": "Assignment 1",
+        "handoutdate": "15/11/2017",
+        "handindate": "12/12/2017"
+        },
+      {
+        "unit_number": "Unit 39",
+        "unit_name": "Games Design",
+        "assign_desc": "Assignment 2",
+        "handoutdate": "21/02/2018",
+        "handindate": "23/05/2018"
+        }]
 }
