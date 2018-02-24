@@ -10,9 +10,17 @@
 #title-bar {
     text-align: center;
 }
-#assignmentsList {
+#assignmentsListHNDY1 {
     margin: auto;
-    width: 100%;
+    width: 90%;
+}
+#assignmentsListHNDY2 {
+    margin: auto;
+    width: 90%;
+}
+#assignmentsListBSCHONS {
+    margin: auto;
+    width: 90%;
 }
 .handIn {
     color: red;
