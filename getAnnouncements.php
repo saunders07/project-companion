@@ -29,7 +29,7 @@
     else {
         echo "Connected";
     }
-    $sql="SELECT * FROM w3schoolsEx";
+    $sql="SELECT * FROM test_announcements";
     $result = mysqli_query($con,$sql);
 
     echo "<table>
