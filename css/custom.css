@@ -15,15 +15,12 @@
 /* ASSIGNMENTS */
 #assignmentsListHNDY1 {
     margin: auto;
-    width: 90%;
 }
 #assignmentsListHNDY2 {
     margin: auto;
-    width: 90%;
 }
 #assignmentsListBSCHONS {
     margin: auto;
-    width: 90%;
 }
 .handIn {
     color: red;
@@ -33,27 +30,13 @@
     color: rgb(0, 255, 34);
     font: bold;
 }
-.assignmentInfo {
-    margin: 0;
+.assignments {
     padding: 0.5rem;
+    margin: 0.5rem;
 }
-/* .assignmentInfo:nth-child(even) {
-    background-color: white;
-} */
-.assignmentContent:nth-child(odd) {
+.assignments:nth-child(odd) {
     background-color: #BDBDBD;
     color: white;
-    /* border-radius: 5px; */
-    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
-}
-.assignmentContent:nth-child(even) {
-    background-color:white;
-}
-.assignmentNameAndNumber {
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0rem;
 }
 
 /* ANNOUNCEMENTS */

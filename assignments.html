@@ -32,22 +32,13 @@
 				</ul>
 			</div>
 
-			<div data-role="nd2tab" data-tab="HNDY1">
-				<div id="assignmentsListHNDY1">
-					
-				</div>
+			<div data-role="nd2tab" data-tab="HNDY1" id="assignmentsListHNDY1" class="row">
 			</div>
 
-			<div data-role="nd2tab" data-tab="HNDY2">
-				<div id="assignmentsListHNDY2">
-					
-				</div>
+			<div data-role="nd2tab" data-tab="HNDY2" id="assignmentsListHNDY2">
 			</div>
 			
-			<div data-role="nd2tab" data-tab="BSCHONS">
-				<div id="assignmentsListBSCHONS">
-					
-				</div>
+			<div data-role="nd2tab" data-tab="BSCHONS" id="assignmentsListBSCHONS">
 			</div>
     </div>
 
@@ -64,15 +55,15 @@
 			$.getJSON("HNDY1Assignments.json", function(data){
 				var assignments = data.assignments;
 				for (q in assignments) {
-					e += "<div class='assignmentContent' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+					e += "<div class='col-md-12 assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
+					e += "<span> Unit Name: " + assignments[q].unit_name + "</span></br>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<p class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</p>";
+					e += "<span>Assignment Description: " + assignments[q].assign_desc + "</span></br>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<p class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></p>";
+					e += "<span>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></span></br>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<p class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></p></div>";
+					e += "<span>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></span></div>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
 				}
 				});
@@ -83,7 +74,7 @@
 			$.getJSON("HNDY2Assignments.json", function(data){
 				var assignments = data.assignments;
 				for (q in assignments) {
-					e += "<div class='assignmentContent' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+					e += "<div class='assignmentContent col-md-12' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListHNDY2").innerHTML = e;
 					e += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListHNDY2").innerHTML = e;
@@ -99,7 +90,7 @@
 		<script>
 			var e = "";
 
-			$.getJSON("documentTest.json", function(data){
+			$.getJSON("BSCHONSAssignments.json", function(data){
 				var assignments = data.assignments;
 				for (q in assignments) {
 					e += "<div class='assignmentContent' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
