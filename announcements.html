@@ -7,6 +7,29 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script>
+			function showUser(str) {
+				if (str == "") {
+					document.getElementById("announcements").innerHTML = "";
+					return;
+				} else { 
+					if (window.XMLHttpRequest) {
+						// code for IE7+, Firefox, Chrome, Opera, Safari
+						xmlhttp = new XMLHttpRequest();
+					} else {
+						// code for IE6, IE5
+						xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+					}
+					xmlhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							document.getElementById("announcements").innerHTML = this.responseText;
+						}
+					};
+					xmlhttp.open("GET","getAnnouncements.php?");
+					xmlhttp.send();
+				}
+			}
+		</script>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
@@ -17,7 +40,7 @@
 
 		<meta name="mobile-web-app-capable" content="yes">
 	 	<meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 	</head>
 	<body>
@@ -32,9 +55,8 @@
 			</div>
 
 			<div role="main" class="ui-content" data-inset="false">
-				<div class="row">
-                    <div class="col-sm-12">
-                    </div>
+				<div class="row" id="announcements">
+                    
 				</div>
 			</div>
 
@@ -47,6 +69,5 @@
 		<script src="vendor/wow/wow.min.js"></script>
 		<script src="js/nativedroid2.js"></script>
 		<script src="nd2settings.js"></script>
-
 	</body>
 </html>
