@@ -11,6 +11,10 @@
 #title-bar {
     text-align: center;
 }
+.cardInfo {
+    margin: 0 auto;
+    display: block
+}
 
 /* ASSIGNMENTS */
 #assignmentsListHNDY1 {
