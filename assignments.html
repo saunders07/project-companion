@@ -24,7 +24,7 @@
 
 			<div data-role="header" data-position="fixed" data-wow-delay="0.2s">
 				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'><i class="zmdi zmdi-assignment-o zmd-fw"></i> Assignments</h1>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Assignments</h1>
 				<ul data-role="nd2tabs" data-swipe="true" class="nd2Tabs">
 					<li data-tab="HNDY1">HND Year 1</li>
 					<li data-tab="HNDY2">HND Year 2</li>
@@ -32,17 +32,27 @@
 				</ul>
 			</div>
 
-			<div data-role="nd2tab" data-tab="HNDY1" id="assignmentsListHNDY1" class="row">
+			<div data-role="nd2tab" data-tab="HNDY1">
+				<div id="assignmentsListHNDY1">
+					
+				</div>
 			</div>
 
-			<div data-role="nd2tab" data-tab="HNDY2" id="assignmentsListHNDY2">
+			<div data-role="nd2tab" data-tab="HNDY2">
+				<div id="assignmentsListHNDY2">
+					
+				</div>
 			</div>
 			
-			<div data-role="nd2tab" data-tab="BSCHONS" id="assignmentsListBSCHONS">
+			<div data-role="nd2tab" data-tab="BSCHONS">
+				<div id="assignmentsListBSCHONS">
+					
+				</div>
 			</div>
     </div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<script src="vendor/waves/waves.min.js"></script>
 		<script src="vendor/wow/wow.min.js"></script>
@@ -54,15 +64,15 @@
 			$.getJSON("HNDY1Assignments.json", function(data){
 				var assignments = data.assignments;
 				for (q in assignments) {
-					e += "<div class='col-md-12 assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+					e += "<div class='assignmentContent' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<span> Unit Name: " + assignments[q].unit_name + "</span></br>";
+					e += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<span>Assignment Description: " + assignments[q].assign_desc + "</span></br>";
+					e += "<p class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</p>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<span>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></span></br>";
+					e += "<p class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></p>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<span>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></span></div>";
+					e += "<p class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></p></div>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
 				}
 				});
@@ -73,7 +83,7 @@
 			$.getJSON("HNDY2Assignments.json", function(data){
 				var assignments = data.assignments;
 				for (q in assignments) {
-					e += "<div class='assignmentContent col-md-12' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+					e += "<div class='assignmentContent' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListHNDY2").innerHTML = e;
 					e += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListHNDY2").innerHTML = e;
@@ -89,7 +99,7 @@
 		<script>
 			var e = "";
 
-			$.getJSON("BSCHONSAssignments.json", function(data){
+			$.getJSON("documentTest.json", function(data){
 				var assignments = data.assignments;
 				for (q in assignments) {
 					e += "<div class='assignmentContent' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
