@@ -1,3 +1,4 @@
+/* HOME/INDEX */
 #top-bar {
     margin: 0 auto;
     padding: 0 auto;
@@ -10,6 +11,8 @@
 #title-bar {
     text-align: center;
 }
+
+/* ASSIGNMENTS */
 #assignmentsListHNDY1 {
     margin: auto;
     width: 90%;
@@ -45,11 +48,19 @@
 }
 .assignmentContent:nth-child(even) {
     background-color:white;
-    color: #9E9E9E;
 }
 .assignmentNameAndNumber {
     padding-top: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0rem;
+}
+
+/* ANNOUNCEMENTS */
+.announcements {
+    padding: 0.5rem;
+}
+.announcements:nth-child(odd) {
+    background-color: #BDBDBD;
+    color: white;
 }

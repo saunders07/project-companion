@@ -28,15 +28,13 @@
     }
     $sql="SELECT * FROM test_announcements";
     $result = mysqli_query($con,$sql);
-    echo "<div class='row'>";
     while($row = mysqli_fetch_array($result)) {
-            echo "<div class='col-md-10 announcements'>";
+            echo "<div class='col-md-12 announcements'>";
             echo "<p><span class='nd2-title'>" . $row['ann_date'] . " - " . $row['ann_title'] . "</span><br>";
             echo "<span class=''>" . $row['ann_content'] . "</span></br>";
             echo "<span class=''> Posted By: " . $row['tutor'] . "</span></p>";
             echo "</div>";
     }
-    echo "</div>";
     echo "</table>";
     mysqli_close($con);
     ?>
