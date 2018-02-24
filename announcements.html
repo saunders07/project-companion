@@ -8,7 +8,7 @@
 		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<script>
-			function showUser(str) {
+			function getAnnouncements(str) {
 				if (str == "") {
 					document.getElementById("announcements").innerHTML = "";
 					return;
@@ -43,7 +43,7 @@
     	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 	</head>
-	<body>
+	<body onload="getAnnouncements()">
 
 		<div data-role="page">
 

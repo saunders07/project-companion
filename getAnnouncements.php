@@ -34,15 +34,18 @@
 
     echo "<table>
     <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Job</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Job</th>
+        <th>Job</th>
+        <th>Job</th>
     </tr>";
     while($row = mysqli_fetch_array($result)) {
         echo "<tr>";
-        echo "<td>" . $row['FirstName'] . "</td>";
-        echo "<td>" . $row['LastName'] . "</td>";
-        echo "<td>" . $row['Hometown'] . "</td>";
+            echo "<td>" . $row['ann_date'] . "</td>";
+            echo "<td>" . $row['ann_title'] . "</td>";
+            echo "<td>" . $row['ann_content'] . "</td>";
+            echo "<td>" . $row['tutor'] . "</td>";
         echo "</tr>";
     }
     echo "</table>";
