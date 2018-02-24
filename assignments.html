@@ -57,13 +57,13 @@
 				for (q in assignments) {
 					e += "<div class='assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
+					e += "<span class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</span></br>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<p class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</p>";
+					e += "<span class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</span></br>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<p class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></p>";
+					e += "<span class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></span><br>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
-					e += "<p class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></p></div>";
+					e += "<span class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></span></div>";
 						document.getElementById("assignmentsListHNDY1").innerHTML = e;
 				}
 				});
@@ -76,13 +76,13 @@
 				for (q in assignments) {
 					j += "<div class='assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListHNDY2").innerHTML = j;
-					j += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
+					j += "<span class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</span><br>";
 						document.getElementById("assignmentsListHNDY2").innerHTML = j;
-					j += "<p class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</p>";
+					j += "<span class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</span><br>";
 						document.getElementById("assignmentsListHNDY2").innerHTML = j;
-					j += "<p class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></p>";
+					j += "<span class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></span><br>";
 						document.getElementById("assignmentsListHNDY2").innerHTML = j;
-					j += "<p class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></p></div>";
+					j += "<span class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></span></div>";
 						document.getElementById("assignmentsListHNDY2").innerHTML = j;
 				}
 				});
@@ -95,13 +95,13 @@
 				for (q in assignments) {
 					h += "<div class='assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
 						document.getElementById("assignmentsListBSCHONS").innerHTML = h;
-					h += "<p class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</p>";
+					h += "<span class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</span><br>";
 						document.getElementById("assignmentsListBSCHONS").innerHTML = h;
-					h += "<p class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</p>";
+					h += "<span class='assignmentInfo'>Assignment Description: " + assignments[q].assign_desc + "</span><br>";
 						document.getElementById("assignmentsListBSCHONS").innerHTML = h;
-					h += "<p class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></p>";
+					h += "<span class='assignmentInfo'>Hand Out:<span class='handOut'> " + assignments[q].handoutdate + "</span></span><br>";
 						document.getElementById("assignmentsListBSCHONS").innerHTML = h;
-					h += "<p class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></p></div>";
+					h += "<span class='assignmentInfo'>Hand In:<span class='handIn'> " + assignments[q].handindate + "</span></span></div>";
 						document.getElementById("assignmentsListBSCHONS").innerHTML = h;
 				}
 				});
