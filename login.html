@@ -1,49 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-    <script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyAX_PUNwLjUhEa3-E81HEd7DdobNV802VU",
-        authDomain: "test-ba798.firebaseapp.com",
-        databaseURL: "https://test-ba798.firebaseio.com",
-        projectId: "test-ba798",
-        storageBucket: "test-ba798.appspot.com",
-        messagingSenderId: "694929286079"
-    };
-    firebase.initializeApp(config);
-    </script>
-    <script>
-        function createUser() {
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-                if (email.length < 4) {
-                    alert('Please enter an email address.');
-                    return;
-                }
-                if (password.length < 4) {
-                    alert('Please enter a password.');
-                    return;
-                }
-        }
-    </script>
-    <title>Document</title>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="login/style.css" />
 </head>
 <body>
-    <div id="signUpForm">
-        <form>
-            Email:<br>
-            <input type="text" name="email" id="email"><br>
-            Password:<br>
-            <input type="text" name="password" id="password"><br>
-            <input type="button" value="Submit" onclick="createUser()">
-        </form>
-    </div>
+
+  <div id="login_div" class="main-div">
+    <h3>Firebase Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <br>
+    <button onclick="create_account()">Create Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para"></p>
+    <button onclick="logout()">Logout</button>
+    <br>
+    <button id="verify_btn" onclick="send_verification()">Send Email Verfication</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+      var config = {
+          apiKey: "AIzaSyAX_PUNwLjUhEa3-E81HEd7DdobNV802VU",
+          authDomain: "test-ba798.firebaseapp.com",
+          databaseURL: "https://test-ba798.firebaseio.com",
+          projectId: "test-ba798",
+          storageBucket: "test-ba798.appspot.com",
+          messagingSenderId: "694929286079"
+      };
+    firebase.initializeApp(config);
+  </script>
+  <script src="login/index.js"></script>
+
 </body>
 </html>
