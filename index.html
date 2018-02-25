@@ -7,6 +7,29 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script>
+			function getAnnouncements(str) {
+				if (str == "") {
+					document.getElementById("announcementsFrontPage").innerHTML = "";
+					return;
+				} else { 
+					if (window.XMLHttpRequest) {
+						// code for IE7+, Firefox, Chrome, Opera, Safari
+						xmlhttp = new XMLHttpRequest();
+					} else {
+						// code for IE6, IE5
+						xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+					}
+					xmlhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							document.getElementById("announcementsFrontPage").innerHTML += this.responseText;
+						}
+					};
+					xmlhttp.open("GET","getAnnouncementsFrontPage.php");
+					xmlhttp.send();
+				}
+			}
+		</script>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
@@ -20,7 +43,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 	</head>
-	<body>
+	<body onload="getAnnouncements()">
 
 		<div data-role="page">
 
@@ -47,9 +70,8 @@
 					</div>
 					<div class="col-md-6">
 						<div class="nd2-card">
-							<div class="card-supporting-text">
+							<div class="card-supporting-text" id="announcementsFrontPage">
 								<p class="nd2-title">Announcements</p>
-								Cards are a convenient means of displaying content composed of different elements. They're also well-suited for showcasing elements whose size or supported actions vary, like photos with captions of variable length.
 							</div>
 						</div>
 					</div>
