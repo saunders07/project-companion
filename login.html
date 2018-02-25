@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAX_PUNwLjUhEa3-E81HEd7DdobNV802VU",
+        authDomain: "test-ba798.firebaseapp.com",
+        databaseURL: "https://test-ba798.firebaseio.com",
+        projectId: "test-ba798",
+        storageBucket: "test-ba798.appspot.com",
+        messagingSenderId: "694929286079"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script>
+        function createUser() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+                if (email.length < 4) {
+                    alert('Please enter an email address.');
+                    return;
+                }
+                if (password.length < 4) {
+                    alert('Please enter a password.');
+                    return;
+                }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="signUpForm">
+        <form>
+            Email:<br>
+            <input type="text" name="email" id="email"><br>
+            Password:<br>
+            <input type="text" name="password" id="password"><br>
+            <input type="button" value="Submit" onclick="createUser()">
+        </form>
+    </div>
+</body>
+</html>
