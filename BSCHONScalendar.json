@@ -1,0 +1,17 @@
+{
+  "calendar":
+    [{
+      "timeframe": "12:30 - 14.30",
+      "unit_number": "CSD305",
+      "unit_name": "Advanced Databases",
+      "lecturer": "Kath Lampard",
+      "room": "OV147B"
+      },
+      {
+      "timeframe": "15:00 - 17:00",
+      "unit_number": "CSD301",
+      "unit_name": "Individual Project",
+      "lecturer": "Jarod Locker",
+      "room": "OV147B"
+      }]
+}
