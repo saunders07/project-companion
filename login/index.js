@@ -22,8 +22,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     } else {
       // No user is signed in.
   
-      document.getElementById("user_div").style.display = "none";
-      document.getElementById("login_div").style.display = "block";
+      window.location.href = ("../login.html");
   
     }
   });
@@ -77,5 +76,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   
   function logout(){
     firebase.auth().signOut();
+    window.location.href("../login.html");
   }
   

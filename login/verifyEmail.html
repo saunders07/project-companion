@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script src="firebaseConfig.js"></script>
+        <script>
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                // User is signed in.
+            
+                var user = firebase.auth().currentUser;
+                var email_verified = user.emailVerified;
+
+                document.getElementById("user_para").innerHTML = "Please verify email to continue!</br>"
+                document.getElementById("user_para").innerHTML += "<br>Email Verified : " + email_verified;
+                document.getElementById("verify_btn").style.display = "block";
+                console.log(user);
+                
+            
+                } else {
+                // No user is signed in.
+            
+            
+                }
+            });
+            
+        </script>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+        <link rel="stylesheet" href="../vendor/waves/waves.min.css" />
+        <link rel="stylesheet" href="../vendor/wow/animate.css" />
+        <link rel="stylesheet" href="../css/nativedroid2.css" />
+        <link rel="stylesheet" href="../css/custom.css" />
+    
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    </head>
+<body>
+  
+  <div class="" id="loggedin_div">
+    <div class="col-md-12" id="login">
+        <div id="user_div" class="loggedin-div">
+            <h3>Welcome User</h3>
+            <p id="user_para"></p>
+            <button onclick="logout()">Logout</button>
+            <br>
+            <button id="verify_btn" onclick="send_verification()">Send Email Verfication</button>
+          </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
