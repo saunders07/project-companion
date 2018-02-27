@@ -1,17 +1,74 @@
 {
-  "calendar":
-    [{
-      "timeframe": "12:30 - 14.30",
-      "unit_number": "CSD305",
-      "unit_name": "Advanced Databases",
-      "lecturer": "Kath Lampard",
-      "room": "OV147B"
-      },
-      {
-      "timeframe": "15:00 - 17:00",
-      "unit_number": "CSD301",
-      "unit_name": "Individual Project",
-      "lecturer": "Jarod Locker",
-      "room": "OV147B"
-      }]
+  "calendar": {
+    "monday": [
+          {
+            "": ""
+          }
+    ],
+    "tuesday": [
+          {
+          "timeframe": "12:30 - 14.30",
+          "unit_number": "CSD305",
+          "unit_name": "Advanced Databases",
+          "lecturer": "Kath Lampard",
+          "room": "OV147B"
+          },
+          {
+          "timeframe": "15:00 - 17:00",
+          "unit_number": "CSD301",
+          "unit_name": "Individual Project",
+          "lecturer": "Jarod Locke",
+          "room": "OV147B"
+          }
+    ],
+      "wednesday": [
+          {
+          "timeframe": "",
+          "unit_number": "",
+          "unit_name": "",
+          "lecturer": "",
+          "room": ""
+          }
+    ],
+      "thursday": [
+          {
+          "timeframe": "9:00 - 10:30",
+          "unit_number": "CSD302",
+          "unit_name": "Mobile Application Design",
+          "lecturer": "Joseph Ake",
+          "room": "OV147B"
+          },
+          {
+          "timeframe": "10:45 - 12:15",
+          "unit_number": "CSD301",
+          "unit_name": "Individual Project",
+          "lecturer": "Kath Lampard",
+          "room": "OV147B"
+          },
+          {
+          "timeframe": "13:15 - 15:15",
+          "unit_number": "CSD303",
+          "unit_name": "Emerging Computing Technologies",
+          "lecturer": "Jarod Locke",
+          "room": "OV147B"
+          }
+          ,
+          {
+          "timeframe": "15:30 - 17:30",
+          "unit_number": "CSD304",
+          "unit_name": "Web and Network Management",
+          "lecturer": "Jarod Locke",
+          "room": "OV147B"
+          }
+    ],
+      "friday": [
+          {
+          "timeframe": "",
+          "unit_number": "",
+          "unit_name": "",
+          "lecturer": "",
+          "room": ""
+          }
+    ]
+  }
 }

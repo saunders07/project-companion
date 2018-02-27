@@ -1,0 +1,70 @@
+{
+  "calendar": {
+    "monday": [
+          {
+          "timeframe": "",
+          "unit_number": "",
+          "unit_name": "",
+          "lecturer": "",
+          "room": ""
+          }
+    ],
+    "tuesday": [
+          {
+          "timeframe": "9:00 - 10:30",
+          "unit_number": "Unit 32",
+          "unit_name": "Quality in IT/Project",
+          "lecturer": "Kath Lampard",
+          "room": "OV147A"
+          },
+          {
+          "timeframe": "10:45 - 11:45",
+          "unit_number": "Unit 29",
+          "unit_name": "E-Commerce",
+          "lecturer": "Kath Lampard",
+          "room": "OV147A"
+          },
+          {
+          "timeframe": "13:00 - 14:30",
+          "unit_number": "Unit 35",
+          "unit_name": "Web App Development",
+          "lecturer": "Malcolm Levon",
+          "room": "OV147A"
+          },
+          {
+          "timeframe": "14:45 - 16:15",
+          "unit_number": "Unit 33",
+          "unit_name": "Data Analysis",
+          "lecturer": "Kath Lampard",
+          "room": "OV147A"
+          }
+    ],
+      "wednesday": [
+          {
+          "timeframe": "",
+          "unit_number": "",
+          "unit_name": "",
+          "lecturer": "",
+          "room": ""
+          }
+    ],
+      "thursday": [
+          {
+          "timeframe": "9:00 - 10:30",
+          "unit_number": "CSD302",
+          "unit_name": "Mobile Application Design",
+          "lecturer": "Joseph Ake",
+          "room": "OV147B"
+          }
+    ],
+      "friday": [
+          {
+          "timeframe": "",
+          "unit_number": "",
+          "unit_name": "",
+          "lecturer": "",
+          "room": ""
+          }
+    ]
+  }
+}
