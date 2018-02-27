@@ -10,20 +10,17 @@ firebase.auth().onAuthStateChanged(function(user) {
 
       if(user != null){
         if (email_verified) {
-            document.getElementById("user_para").innerHTML = "Lets do this!"
             document.getElementById("verify_btn").style.display = "none";
         } else {
-            document.getElementById("user_para").innerHTML = "Please verify email to continue!"
+            document.getElementById("user_para").innerHTML = "Please verify email to continue!</br>"
             document.getElementById("user_para").innerHTML += "<br>Verified : " + email_verified;
             document.getElementById("verify_btn").style.display = "block";
         }  
       }
   
     } else {
-      // No user is signed in.
-  
-      window.location.href = ("login.html");
-  
+    document.getElementById("user_div").style.display = "none";
+    document.getElementById("login_div").style.display = "block";
     }
   });
   
@@ -32,7 +29,9 @@ firebase.auth().onAuthStateChanged(function(user) {
     var userEmail = document.getElementById("email_field").value;
     var userPass = document.getElementById("password_field").value;
   
-    firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+    firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(function(user) {
+      window.location.href = ("index.html")
+    }).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;

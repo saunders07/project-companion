@@ -7,7 +7,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-        <script src="customjs/getAnnouncementsFrontPage.js"></script>
     
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
@@ -32,13 +31,15 @@
         <label for="name2b">Email Address:</label>
         <input type="email" name="name2" id="email_field" value="" data-clear-btn="true" placeholder="Email Address...">
 
+        <!-- Material Design Display Name -->
+        <label for="name2b">Display Name:</label>
+        <input type="text" name="name2" id="name_field" value="" data-clear-btn="true" placeholder="Display Name...">
+
         <!-- Material Design Password -->
         <label for="name2b">Password:</label>
         <input type="password" name="name2" id="password_field" value="" data-clear-btn="true" placeholder="Password...">
 
-        <button onclick="login()">Login to Account</button>
-        <br>
-        <button onclick="window.location='createAccount.html';">Create Account</button>
+        <button onclick="create_account()">Create Account</button>
     </div>
   </div>
   
@@ -56,7 +57,7 @@
 
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="login/firebaseConfig.js"></script>
-  <script src="login/indexLogin.js"></script>
+  <script src="login/indexCreate.js"></script>
 
 </body>
 </html>
