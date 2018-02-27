@@ -15,7 +15,7 @@ function getAnnouncements(str) {
                 document.getElementById("announcementsFrontPage").innerHTML += this.responseText;
             }
         };
-        xmlhttp.open("GET","getAnnouncementsFrontPage.php");
+        xmlhttp.open("GET","customjs/ajax/getAnnouncementsFrontPage.php");
         xmlhttp.send();
     }
 }
