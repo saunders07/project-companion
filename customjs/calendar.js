@@ -11,7 +11,7 @@ switch (n) {
     case 1:
         day = "Monday";
         console.log(day);
-        $.getJSON("HNDY2calendar.json", function(data){
+        $.getJSON("customjs/json/HNDY2calendar.json", function(data){
             var calendar = data.calendar.monday;
             for (q in calendar) {
                 l += "<div class='calendar' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
@@ -29,7 +29,7 @@ switch (n) {
         break;
     case 2:
         var day = "Tuesday";
-        $.getJSON("HNDY2calendar.json", function(data){
+        $.getJSON("customjs/json/HNDY2calendar.json", function(data){
             var calendar = data.calendar.tuesday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
@@ -48,7 +48,7 @@ switch (n) {
         break;
     case 3:
         day = "Wednesday";
-        $.getJSON("HNDY2calendar.json", function(data){
+        $.getJSON("customjs/json/HNDY2calendar.json", function(data){
             var calendar = data.calendar.wednesday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
@@ -67,7 +67,7 @@ switch (n) {
         break;
     case 4:
         day = "Thursday";
-        $.getJSON("HNDY2calendar.json", function(data){
+        $.getJSON("customjs/json/HNDY2calendar.json", function(data){
             var calendar = data.calendar.thursday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
@@ -86,7 +86,7 @@ switch (n) {
         break;
     case 5:
         day = "Friday";
-        $.getJSON("HNDY2calendar.json", function(data){
+        $.getJSON("customjs/json/HNDY2calendar.json", function(data){
             var calendar = data.calendar.friday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
@@ -115,7 +115,7 @@ switch (n) {
     case 1:
         day = "Monday";
         console.log(day);
-        $.getJSON("BSCHONScalendar.json", function(data){
+        $.getJSON("customjs/json/BSCHONScalendar.json", function(data){
             var calendar = data.calendar.monday;
             for (q in calendar) {
                 j += "<div class='calendar' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
@@ -133,7 +133,7 @@ switch (n) {
         break;
     case 2:
         var day = "Tuesday";
-        $.getJSON("BSCHONScalendar.json", function(data){
+        $.getJSON("customjs/json/BSCHONScalendar.json", function(data){
             var calendar = data.calendar.tuesday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
@@ -152,7 +152,7 @@ switch (n) {
         break;
     case 3:
         day = "Wednesday";
-        $.getJSON("BSCHONScalendar.json", function(data){
+        $.getJSON("customjs/json/BSCHONScalendar.json", function(data){
             var calendar = data.calendar.wednesday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
@@ -171,7 +171,7 @@ switch (n) {
         break;
     case 4:
         day = "Thursday";
-        $.getJSON("BSCHONScalendar.json", function(data){
+        $.getJSON("customjs/json/BSCHONScalendar.json", function(data){
             var calendar = data.calendar.thursday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
@@ -190,7 +190,7 @@ switch (n) {
         break;
     case 5:
         day = "Friday";
-        $.getJSON("BSCHONScalendar.json", function(data){
+        $.getJSON("customjs/json/BSCHONScalendar.json", function(data){
             var calendar = data.calendar.fridday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {

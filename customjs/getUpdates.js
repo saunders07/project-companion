@@ -15,7 +15,7 @@ function getUpdates(str) {
                 document.getElementById("updates").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET","getUpdates.php");
+        xmlhttp.open("GET","customjs/ajax/getUpdates.php");
         xmlhttp.send();
     }
 }

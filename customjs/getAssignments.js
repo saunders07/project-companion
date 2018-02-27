@@ -1,7 +1,7 @@
 // GET JSON FOR HNDY1 ASSIGNMENTS
 var e = "";
 
-	$.getJSON("HNDY1Assignments.json", function(data){
+	$.getJSON("customjs/json/HNDY1Assignments.json", function(data){
 	    var assignments = data.assignments;
 		for (q in assignments) {
 			e += "<div class='assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
@@ -20,7 +20,7 @@ var e = "";
 // GET JSON FOR HNDY2 ASSIGNMENTS
 var j = "";
 
-    $.getJSON("HNDY2Assignments.json", function(data){
+    $.getJSON("customjs/json/HNDY2Assignments.json", function(data){
         var assignments = data.assignments;
         for (q in assignments) {
             j += "<div class='assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
@@ -39,7 +39,7 @@ var j = "";
 // GET JSON FOR BSCHONS ASSIGNMENTS
 var h = "";
 
-    $.getJSON("BSCHONSAssignments.json", function(data){
+    $.getJSON("customjs/json/BSCHONSAssignments.json", function(data){
         var assignments = data.assignments;
         for (q in assignments) {
             h += "<div class='assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
