@@ -14,7 +14,7 @@ switch (n) {
         $.getJSON("customjs/json/HNDY2calendar.json", function(data){
             var calendar = data.calendar.monday;
             for (q in calendar) {
-                l += "<div class='calendar' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                l += "<div class='calendar wow fadeIn' data-wow-delay='0.4s'' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
                 l += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
@@ -33,7 +33,7 @@ switch (n) {
             var calendar = data.calendar.tuesday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
-                l += "<div class='calendar' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                l += "<div class='calendar wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
                 l += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
@@ -52,7 +52,7 @@ switch (n) {
             var calendar = data.calendar.wednesday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
-                l += "<div class='calendar' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                l += "<div class='calendar wow fadeIn' data-wow-delay='0.4s id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
                 l += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
@@ -71,7 +71,7 @@ switch (n) {
             var calendar = data.calendar.thursday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
-                l += "<div class='calendar' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                l += "<div class='calendar wow fadeIn' data-wow-delay='0.4s id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
                 l += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
@@ -90,7 +90,7 @@ switch (n) {
             var calendar = data.calendar.friday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
-                l += "<div class='calendar' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                l += "<div class='calendar wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
                 l += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarHNDY2").innerHTML = l;
@@ -118,7 +118,7 @@ switch (n) {
         $.getJSON("customjs/json/BSCHONScalendar.json", function(data){
             var calendar = data.calendar.monday;
             for (q in calendar) {
-                j += "<div class='calendar' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                j += "<div class='calendar wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;
                 j += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;
@@ -137,7 +137,7 @@ switch (n) {
             var calendar = data.calendar.tuesday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
-                j += "<div class='calendar' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                j += "<div class='calendar wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;
                 j += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;
@@ -156,7 +156,7 @@ switch (n) {
             var calendar = data.calendar.wednesday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
-                j += "<div class='calendar' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                j += "<div class='calendar wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;
                 j += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;
@@ -175,7 +175,7 @@ switch (n) {
             var calendar = data.calendar.thursday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
-                j += "<div class='calendar' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                j += "<div class='calendar wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;
                 j += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;
@@ -194,7 +194,7 @@ switch (n) {
             var calendar = data.calendar.fridday;
             console.log(document.getElementById("dayTitle"));
             for (q in calendar) {
-                j += "<div class='calendar' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
+                j += "<div class='calendar wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-subhead assignmentNameAndNumber'>" + calendar[q].timeframe + "</p>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;
                 j += "<span class='calendarInfo'> Unit Name: " + calendar[q].unit_number + "</span><br>";
                     document.getElementById("calendarBSCHONS").innerHTML = j;

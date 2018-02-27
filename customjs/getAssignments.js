@@ -4,7 +4,7 @@ var e = "";
 	$.getJSON("customjs/json/HNDY1Assignments.json", function(data){
 	    var assignments = data.assignments;
 		for (q in assignments) {
-			e += "<div class='assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+			e += "<div class='assignments wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
 				document.getElementById("assignmentsListHNDY1").innerHTML = e;
 		    e += "<span class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</span></br>";
 				document.getElementById("assignmentsListHNDY1").innerHTML = e;
@@ -23,7 +23,7 @@ var j = "";
     $.getJSON("customjs/json/HNDY2Assignments.json", function(data){
         var assignments = data.assignments;
         for (q in assignments) {
-            j += "<div class='assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+            j += "<div class='assignments wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
                 document.getElementById("assignmentsListHNDY2").innerHTML = j;
             j += "<span class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</span><br>";
                 document.getElementById("assignmentsListHNDY2").innerHTML = j;
@@ -42,7 +42,7 @@ var h = "";
     $.getJSON("customjs/json/BSCHONSAssignments.json", function(data){
         var assignments = data.assignments;
         for (q in assignments) {
-            h += "<div class='assignments' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
+            h += "<div class='assignments wow fadeIn' data-wow-delay='0.4s' id =" + [q] + "><p class ='nd2-title assignmentNameAndNumber'>" + assignments[q].unit_number + " " + assignments[q].unit_name + "</p>";
                 document.getElementById("assignmentsListBSCHONS").innerHTML = h;
             h += "<span class='assignmentInfo'> Unit Name: " + assignments[q].unit_name + "</span><br>";
                 document.getElementById("assignmentsListBSCHONS").innerHTML = h;

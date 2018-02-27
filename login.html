@@ -1,35 +1,58 @@
 <html>
-<head>
-  <title>HNDbyTheSea College Companion - Login</title>
-  <link rel="stylesheet" href="css/nativedroid2.css" />
-  <link rel="stylesheet" href="login/style.css" />
-</head>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+        <script src="customjs/getAnnouncementsFrontPage.js"></script>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+        <link rel="stylesheet" href="vendor/waves/waves.min.css" />
+        <link rel="stylesheet" href="vendor/wow/animate.css" />
+        <link rel="stylesheet" href="css/nativedroid2.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+    
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    </head>
 <body>
 
-  <div id="login_div" class="main-div row">
-      <div id="top-bar">
-					<img src="img/HNDlogo.png" alt="Logo for HNDbythesea.co.uk" width="125" id="HNDLogo">
-					<h3 class="nd2-title" id="title-bar">Welcome to HNDbyTheSea</br>College Companion</h3>
-				</div>
-    <input type="email" placeholder="Email..." id="email_field" />
-    <input type="password" placeholder="Password..." id="password_field" />
+  <div class="row" id="login_div">
+    <div class="col-md-12" id="login">
+        <img src="img/HNDlogo.png" alt="Logo for HNDbythesea.co.uk" width="125" id="HNDLogo">
+        <h3 class="nd2-title" id="title-bar">Welcome to HNDbyTheSea</br>College Companion</h3>
 
-    <button onclick="login()">Login to Account</button>
-    <br>
-    <button onclick="create_account()">Create Account</button>
-    <label for="name2b">Text Input:</label>
-    <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Type your text here...">
+        <!-- Material Design Email -->
+        <label for="name2b">Email Address:</label>
+        <input type="email" name="name2" id="email_field" value="" data-clear-btn="true" placeholder="Email Address...">
+
+        <!-- Material Design Password -->
+        <label for="name2b">Password:</label>
+        <input type="password" name="name2" id="password_field" value="" data-clear-btn="true" placeholder="Password...">
+
+        <button onclick="login()">Login to Account</button>
+        <br>
+        <button onclick="create_account()">Create Account</button>
+    </div>
   </div>
-
-  <div id="user_div" class="loggedin-div">
-    <h3>Welcome User</h3>
-    <p id="user_para"></p>
-    <button onclick="logout()">Logout</button>
-    <br>
-    <button id="verify_btn" onclick="send_verification()">Send Email Verfication</button>
+  
+  <div class="" id="loggedin_div">
+    <div class="col-md-12" id="login">
+        <div id="user_div" class="loggedin-div">
+            <h3>Welcome User</h3>
+            <p id="user_para"></p>
+            <button onclick="logout()">Logout</button>
+            <br>
+            <button id="verify_btn" onclick="send_verification()">Send Email Verfication</button>
+          </div>
+    </div>
   </div>
-
-
 
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="login/firebaseConfig.js"></script>
