@@ -1,19 +1,24 @@
 <html>
 <head>
-  <title>Firebase Login</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>HNDbyTheSea College Companion - Login</title>
+  <link rel="stylesheet" href="css/nativedroid2.css" />
   <link rel="stylesheet" href="login/style.css" />
 </head>
 <body>
 
-  <div id="login_div" class="main-div">
-    <h3>Firebase Web login Example</h3>
+  <div id="login_div" class="main-div row">
+      <div id="top-bar">
+					<img src="img/HNDlogo.png" alt="Logo for HNDbythesea.co.uk" width="125" id="HNDLogo">
+					<h3 class="nd2-title" id="title-bar">Welcome to HNDbyTheSea</br>College Companion</h3>
+				</div>
     <input type="email" placeholder="Email..." id="email_field" />
     <input type="password" placeholder="Password..." id="password_field" />
 
     <button onclick="login()">Login to Account</button>
     <br>
     <button onclick="create_account()">Create Account</button>
+    <label for="name2b">Text Input:</label>
+    <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Type your text here...">
   </div>
 
   <div id="user_div" class="loggedin-div">
