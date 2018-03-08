@@ -67,7 +67,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     
         window.alert("Error : " + errorMessage);
 
-        // send_verification();
       });
 
 
