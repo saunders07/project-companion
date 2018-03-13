@@ -12,10 +12,10 @@ function getAnnouncements(str) {
         }
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("announcements").innerHTML = this.responseText;
+                document.getElementById("announcements123").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET","customjs/ajax/getAnnouncements.php");
+        xmlhttp.open("GET","customjs/ajax/getAnnouncementsJSON.php");
         xmlhttp.send();
     }
 }

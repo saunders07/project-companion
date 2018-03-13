@@ -27,7 +27,7 @@
     }
     $outJSON = json_encode(array('announcements' => $announcements));
 
-    $fp = fopen('customjs/json/test.json', 'w');
+    $fp = fopen('../../customjs/json/announcements.json', 'w');
     fwrite($fp, $outJSON);
     fclose($fp);
 ?>
