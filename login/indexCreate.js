@@ -58,7 +58,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   function create_account() {
 
     var userEmail = document.getElementById("email_field").value;
-    var username = document.getElementById("name_field").value;
+    var userPass = document.getElementById("password_field").value;
 
     firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function(error) {
         // Handle Errors here.
