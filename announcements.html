@@ -8,9 +8,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-		<script src="customjs/getAnnouncements.js"></script>
 		<script src="login/firebaseConfig.js"></script>
 		<script src="login/checkUser.js"></script>
+		<script src="customjs/getAnnouncements.js"></script>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
@@ -24,7 +24,7 @@
     	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 	</head>
-	<body onload="getAnnouncements()">
+	<body>
 
 		<div data-role="page">
 
@@ -36,8 +36,8 @@
 			</div>
 
 			<div role="main" class="ui-content" data-inset="false">
-				<button class="ui-btn" onclick="getAnnouncements()">Refresh Announcements</button></br>
-				<div class="row" id="announcements123">
+				<button class="ui-btn">Refresh Announcements</button></br>
+				<div class="row" id="announcements">
 				</div>
 			</div>
 
